@@ -6,6 +6,8 @@ set(C_STANDARD_REQUIRED true)
 set(CMAKE_CXX_STANDARD 11)
 set(CXX_STANDARD_REQUIRED true)
 
+add_compile_options(-Wno-c++20-compat)
+
 if (${CMAKE_PROJECT_NAME} STREQUAL nitro)
     # we are the top-level project and are responsible for configuration
 
